@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Individual House Subtypes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Same style as others */
+    body, h1, .card-container, .subtype-card, .subtype-card img, .subtype-title, .subtype-desc {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 40px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .subtype-card {
+      background: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .subtype-card:hover {
+      transform: scale(1.05);
+    }
+    .subtype-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .subtype-title {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .subtype-desc {
+      color: #555;
+      font-size: 0.95em;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Individual House Subtypes</h1>
+
+  <div class="card-container">
+    <div class="subtype-card">
+      <img src="images/single_family.jpg" alt="1BHK">
+      <div class="subtype-title">Single Family</div>
+      <div class="subtype-desc">
+        A cozy and private standalone house perfect for individuals or couples. It typically includes a single bedroom, hall, and kitchen, ideal for minimal maintenance and peaceful living.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Town_House.jpg" alt="2BHK">
+      <div class="subtype-title">Town House</div>
+      <div class="subtype-desc">
+        A modern and compact two-bedroom home, often located in urban or semi-urban settings. Offers a good balance of space, privacy, and affordability for small families or working professionals.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Multi_Family.jpg" alt="3BHK">
+      <div class="subtype-title">Multi Family</div>
+      <div class="subtype-desc">
+        A spacious residence designed for multiple families or a large extended family. Comes with three or more bedrooms, ample living space, multiple bathrooms, and often includes amenities like a backyard or garage.
+      </div>
+    </div>
+  </div>  
+  </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select House Type</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .house-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .house-btn {
+      padding: 15px 30px;
+      font-size: 16px;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      background-color: white;
+      color: #007bff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .house-btn:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .house-btn.selected {
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Select a House Type</h2>
+  <div class="house-options">
+    <button class="house-btn" onclick="selectHouse(this)">Apartment</button>
+    <button class="house-btn" onclick="selectHouse(this)">Villa</button>
+    <button class="house-btn" onclick="selectHouse(this)">Bungalow</button>
+    <button class="house-btn" onclick="selectHouse(this)">Duplex</button>
+  </div>
+
+  <script>
+    function selectHouse(button) {
+      const buttons = document.querySelectorAll('.house-btn');
+      buttons.forEach(btn => btn.classList.remove('selected'));
+      button.classList.add('selected');
+      alert("Selected House Type: " + button.textContent);
+    }
+  </script>
+
+</body>
+</html>

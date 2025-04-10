@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Villa Subtypes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 40px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .subtype-card {
+      background-color: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .subtype-card:hover {
+      transform: scale(1.05);
+    }
+    .subtype-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .subtype-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .subtype-desc {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Villa Subtypes</h1>
+
+  <div class="card-container">
+    <div class="subtype-card">
+      <img src="images/Luxury_Villa.jpg" alt="Luxury Villa">
+      <div class="subtype-title">Luxury Villa</div>
+      <div class="subtype-desc">
+        Experience the pinnacle of sophistication with our luxury villa, featuring expansive living areas, private swimming pool, landscaped gardens, smart home automation, home theatre, and elegant interior designs—perfect for those who love premium living.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Private_Villa.jpg" alt="Standard Villa">
+      <div class="subtype-title">Standard Villa</div>
+      <div class="subtype-desc">
+        A well-designed villa offering a perfect balance of comfort, space, and privacy. Includes multiple bedrooms, stylish interiors, private parking, and a garden space—ideal for modern families seeking peaceful suburban living.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Eco_Villa.jpg" alt="Eco Villa">
+      <div class="subtype-title">Eco Villa</div>
+      <div class="subtype-desc">
+        Built with sustainability in mind, this eco-friendly villa uses natural materials, solar panels, rainwater harvesting, and energy-efficient design to offer a healthy, nature-integrated lifestyle while reducing your environmental footprint.
+      </div>
+    </div>
+  </div>  
+</body>
+</html>

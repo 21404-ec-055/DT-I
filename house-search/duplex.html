@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Duplex Subtypes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 40px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .subtype-card {
+      background: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .subtype-card:hover {
+      transform: scale(1.05);
+    }
+    .subtype-card img {
+      width: 100%;
+      height: 160px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .subtype-title {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .subtype-desc {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Duplex Subtypes</h1>
+
+  <div class="card-container">
+    <div class="subtype-card">
+      <img src="images/Low_Rise.jpg" alt="Standard Duplex">
+      <div class="subtype-title">Low Rise Duplex</div>
+      <div class="subtype-desc">
+        A two-floor residential unit perfect for growing families, offering privacy and comfort. Includes spacious bedrooms, a cozy living room, modular kitchen, and a small backyard, ideal for peaceful suburban living with easy access.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Standard_Duplex.jpg" alt="Luxury Duplex">
+      <div class="subtype-title">Standard Duplex</div>
+      <div class="subtype-desc">
+        A modern duplex designed with sleek interiors, premium fittings, and an open-concept layout. It features multiple bedrooms, attached bathrooms, private terrace, and an elegant staircase connecting both levels—perfect for stylish living.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Gound_Duplex.jpg" alt="Ground Duplex">
+      <div class="subtype-title">Ground Duplex</div>
+      <div class="subtype-desc">
+        A duplex built starting from the ground level with direct access to a garden or patio. Offers spacious ground-floor common areas and private upper-level bedrooms—blending comfort, functionality, and natural surroundings beautifully.
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>

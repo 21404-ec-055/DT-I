@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bungalow Subtypes</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 40px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .subtype-card {
+      background: white;
+      width: 250px;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .subtype-card:hover {
+      transform: scale(1.05);
+    }
+    .subtype-card img {
+      width: 100%;
+      height: 160px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .subtype-title {
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .subtype-desc {
+      font-size: 0.95em;
+      color: #555;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bungalow Subtypes</h1>
+
+  <div class="card-container">
+    <div class="subtype-card">
+      <img src="images/California_Bungalow.jpg" alt="Luxury Bungalow">
+      <div class="subtype-title">California Bungalow</div>
+      <div class="subtype-desc">
+        A stylish, low-profile bungalow that blends modern living with vintage charm. Features include a private garden, a cozy porch, premium interiors, and a backyard pool, making it perfect for relaxed and luxurious suburban life.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/American_Craftmen.jpg" alt="Standard Bungalow">
+      <div class="subtype-title">American Craftmen</div>
+      <div class="subtype-desc">
+        Known for its handcrafted woodwork and classic American design, this single-story bungalow offers wide front porches, exposed beams, spacious interiors, and a warm, welcoming feel—great for family-oriented lifestyles.
+      </div>
+    </div>
+  
+    <div class="subtype-card">
+      <img src="images/Chicago.jpg" alt="Chicago Bungalow">
+      <div class="subtype-title">Chicago Bungalow</div>
+      <div class="subtype-desc">
+        Inspired by early 20th-century designs, the Chicago Bungalow features a brick exterior, sun-filled living rooms, elegant archways, and compact yet comfortable layout—perfect for city dwellers wanting both charm and function.
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</body>
+</html>
